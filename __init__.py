@@ -1,3 +1,5 @@
+__version__ = "1.0-Public"
+
 import requests, json, random
 
 class Madlibs:

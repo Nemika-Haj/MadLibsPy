@@ -12,3 +12,6 @@ answers = [input(f"Enter a {i}: ") for i in data["variables"]]
 output = ml.convert(answers, data['questions'], data['text'])
 print(output)
 ``` 
+
+## How to install
+> To install **MadlibsPy**, use `pip install madlibspy`!
