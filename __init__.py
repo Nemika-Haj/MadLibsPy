@@ -1,6 +1,6 @@
 __version__ = "1.0-Public"
 
-import requests, json, random
+import requests, json
 
 class Madlibs:
   def get(path=None):
@@ -8,7 +8,7 @@ class Madlibs:
       with open(path, "r") as f:
         data = json.load(path)
     else:
-      data = random.choice(requests.get("https://api.bytestobits.dev/madlibs").json())
+      data = requests.get("https://api.bytestobits.dev/madlibs").json()
     
     return data
   
