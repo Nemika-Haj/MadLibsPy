@@ -1,17 +1,14 @@
-# MadLibsPy
+# **MadlibsPy**
+Create your own madlibs game!
 
-## How to use
-> Here's an example of how to use MadLibsPy
+## **Installation**
+Use `python -m pip install madlibspy`
+
+## **Example**
 ```py
-from madlibspy import Madlibs as ml
+-
+```
+*And much more!*
 
-data = ml.get()
-
-answers = [input(f"Enter a {i}: ") for i in data["variables"]]
-
-output = ml.convert(answers, data['questions'], data['text'])
-print(output)
-``` 
-
-## How to install
-> To install **MadlibsPy**, use `pip install madlibspy`!
+## **Documentation**
+Coming soon...!

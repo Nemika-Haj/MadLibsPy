@@ -1,0 +1,10 @@
+{
+    "title": "My Custom Epic Madlib!",
+    "variables": [
+        "Adjective",
+        "Noun",
+        "Verb"
+    ],
+    "text": "This is a very {0} adjective with a {1} noun and an epic verb like this one; {2}. I can use them again, heh! {2} {0} {1}",
+    "questions": 3
+}
