@@ -1,6 +1,6 @@
 import madlibspy as madlibs
 
-data = madlibs.Madlibs()
+data = madlibs.Madlibs(API_TOKEN)
 
 answers = [input(f"Enter a/an {i}: ") for i in data.variables]
 

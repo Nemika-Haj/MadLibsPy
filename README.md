@@ -8,7 +8,7 @@ Use `python -m pip install madlibspy`
 ```py
 import madlibspy as madlibs
 
-data = madlibs.Madlibs()
+data = madlibs.Madlibs(API_TOKEN) # You need an API token from api.bytestobits.dev
 
 answers = [input(f"Enter a/an {i}: ") for i in data.variables]
 

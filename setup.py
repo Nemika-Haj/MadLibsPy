@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
 setup(
   name = 'madlibspy',
   packages = ['madlibspy'],
-  version = '2.2',
+  version = '2.3',
   license='MIT',
   description = 'A library to create your own madlibs game!',
   author = 'Nemika',

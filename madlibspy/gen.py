@@ -13,12 +13,15 @@ __all__ = (
 )
 
 class Madlibs:
-    def __init__(self, random:bool=True, fp:str=None):
+    def __init__(self, token:str, random:bool=True, fp:str=None):
+        self.token = token
         if random:
             try:
-                self.data = requests.get(API_URL)
+                self.data = requests.get(API_URL, headers = {
+                    "Authorization": self.token
+                })
                 if not self.data.status_code == 200:
-                    raise APIError("There was an error fetching data from the API (https://api.bytestobits.dev/)")
+                    raise APIError(str(self.data.json()))
                 else:
                     self.data = self.data.json()
             except requests.ConnectionError as e:
